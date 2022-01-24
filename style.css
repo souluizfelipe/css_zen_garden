@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+}
+
+/* to delete */
+div, header, section, footer, aside, nav {
+  border: 1px solid red;
+}
+
+p {
+  border: 1px solid blue;
+}
+/* to delete */
+
+.page-wrapper { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* general rules */
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* end general rules */
+
+/* intro  */
+
+.intro header {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro header h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.intro header h1, .intro header h2 {
+  margin: 0;
+}
+
+.summary {
+  margin: 0;
+  text-align: center;
+}
+
+.preamble {
+  float: left;
+}
+
+/* end intro */
+
+/* sidebar */
+
+.navigation {
+  
+}
+
+.design-selection nav h3 {
+
+}
+
+.design-selection nav ul li {
+  padding: 1rem;
+}
+
+
+.zen-resources ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.zen-resources ul li a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.resources {
+  display: none;
+}
+
+/* end sidebar */
