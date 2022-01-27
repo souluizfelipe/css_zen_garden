@@ -5,12 +5,19 @@
   list-style: none;
 }
 
+:root {
+  --color-black: #222
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
 
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5rem;
+  color: var(--color-black);
+  margin: 0 2rem;
+  max-width: 1200px;
 }
 
 /* to delete */
@@ -24,8 +31,9 @@ p {
 /* to delete */
 
 .page-wrapper { 
-  max-width: 1200px;
-  margin: 0 auto;
+  
+  /* margin: 0 auto; */
+  /* position: relative; */
 }
 
 /* general rules */
@@ -33,16 +41,30 @@ p {
 h3 {
   font-size: 1.5rem;
   padding: 0.5rem;
+  padding-left: 0;
+}
+
+div {
+  /* border-left: 1px solid #8b8b8b; */
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--color-black);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;  
+}
+
+.intro, .main {
+  width: 75%;
+  float: right;
+  margin: 0 auto;
 }
 
 /* end general rules */
 
 /* intro  */
-
-.intro {
-  width: 80vh;
-  float: right;
-}
 
 .intro header {
   height: 200px;
@@ -67,7 +89,6 @@ h3 {
   margin: 0;
   text-align: center;
   margin-bottom: 50px;
-  
 }
 
 .summary p:first-child {
@@ -87,29 +108,41 @@ h3 {
 
 /* main supporting */
 
-.main {
-  width: 80vh;
-  float: right;
-}
-
 /* end main supporting */
 
 /* sidebar */
 
 .sidebar {
-  max-width: 20vw;
+  width: 250px;
   position: absolute;
-  top: 335px;
+  left: 0;
+  top: 330px;
 }
 
-.sidebar ul li a {
+.sidebar nav ul li {
+  font-size: 0.75rem;
+}
+
+.sidebar nav ul li a {
   padding: 1rem;
-  display: inline-block;
+  padding-left: 0;
 }
 
 .sidebar .design-selection nav ul li {
   padding: 1rem;
+  padding-left: 0; 
+  font-size: 1rem;
 }
+
+.sidebar .design-selection nav ul li a {
+  display: block;
+}
+
+.sidebar .design-selection nav ul li a:last-child {
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
 
 .sidebar .design-selection nav ul li a {
   padding: 0;
