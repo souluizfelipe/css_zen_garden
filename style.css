@@ -10,6 +10,7 @@
   --color-white: #FFF;
   --color-light-grey: #DCE0E0;
   --color-dark-grey: #808080;
+  --color-yellow: #E9DC1E;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
@@ -49,6 +50,8 @@ h3 {
   font-size: 1.5rem;
   padding: 0.5rem;
   padding-left: 0;
+  color: var(--color-light-grey);
+  text-shadow: 2px 2px 5px var(--color-black);
 }
 
 div {
@@ -150,13 +153,26 @@ p {
 /* footer */
 
 footer {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-light-grey);
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer:hover {
+  background-color: var(--color-dark-grey);
 
 }
 
 footer a {
-  color: var(--color-white); 
+  color: var(--color-black); 
+  padding: 0.25rem;
+}
+
+footer a:hover {
+  color: var(--color-yellow);
 }
 
 /* end footer */
@@ -173,8 +189,15 @@ footer a {
   background-image: url(./images/road_sidebar.jpg);
 }
 
+.sidebar a {
+  color: var(--color-light-grey);
+  text-shadow: 2px 2px 5px var(--color-black);
+}
+
 .sidebar nav ul li {
   font-size: 0.75rem;
+  color: var(--color-light-grey);
+  text-shadow: 2px 2px 5px var(--color-black);
 }
 
 .sidebar nav ul li a {
@@ -190,6 +213,7 @@ footer a {
 
 .sidebar .design-selection nav ul li a {
   display: block;
+  
 }
 
 .sidebar .design-selection nav ul li a:last-child {
