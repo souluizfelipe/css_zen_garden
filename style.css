@@ -185,13 +185,35 @@ footer a:hover {
   position: absolute;
   left: -270px;
   top: 388px;
-  padding: 2rem 1rem;
   background-image: url(./images/road_sidebar.jpg);
+  padding: 1rem 1rem;
 }
 
 .sidebar a {
+  width: fit-content;
   color: var(--color-light-grey);
   text-shadow: 2px 2px 5px var(--color-black);
+  display: inline-block;
+  position: relative;
+}
+
+.sidebar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-light-grey);
+  transform-origin: bottom right;
+  transition: transform 300ms ease-out;
+}
+
+.sidebar a:hover:after {
+  text-decoration-thickness: 2px;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .sidebar nav ul li {
@@ -208,12 +230,12 @@ footer a:hover {
 .sidebar .design-selection nav ul li {
   padding: 1rem;
   padding-left: 0; 
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .sidebar .design-selection nav ul li a {
   display: block;
-  
+  font-size: 1rem;
 }
 
 .sidebar .design-selection nav ul li a:last-child {
@@ -224,6 +246,16 @@ footer a:hover {
 .sidebar .design-selection nav ul li a {
   padding: 0;
 }
+
+.sidebar .design-archives {
+  display: none;
+}
+
+.sidebar .zen-resources ul li a {
+  padding-top: 1rem;  
+  display: block;
+}
+
 
 
 /* end sidebar */
